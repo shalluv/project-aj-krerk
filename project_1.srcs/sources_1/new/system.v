@@ -21,15 +21,16 @@
 
 
 module system(
-    output wire TX,
+    inout wire [7:0] JB,
     output [6:0] seg,
     output dp,
     output [3:0] an,
-    input wire RX,
     input clk,
     input [7:0] sw,
     input btnC
     );
+    assign RsTx = JB[0];
+    assign RsRx = JB[1];
     
     // Clock
     wire targetClk;
