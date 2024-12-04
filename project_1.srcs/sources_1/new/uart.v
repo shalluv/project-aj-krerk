@@ -24,12 +24,13 @@ module uart(
     input RsRx,
     output RsTx,
     output [7:0]data_in,
-    input send,
+    input btnC,
     input [7:0] sw
     );
     
-    reg en;
-    reg [7:0] data_out;
+    reg en, last_sen;
+    wire [7:0] data_out;
+    assign data_out = sw;
     wire [7:0] data_in;
     wire sent, received, baud;
     baudrate_gen baudrate_gen(clk, baud);
@@ -38,8 +39,10 @@ module uart(
     
     always @(posedge baud) begin
         if (en) en = 0;
-        data_out = sw;
-        if(send) en = 1;
+        if (~last_sen & btnC) begin
+            en = 1;
+        end
+        last_sen = btnC;
     end
     
 endmodule

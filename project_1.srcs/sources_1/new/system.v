@@ -41,15 +41,12 @@ module system(
     end endgenerate
     halfClock fdivTarget(targetClk,tclk[18]);    
     
-    reg send;
-    sp singlePulser(send, btnC, clk);
-    
     // display
     wire [7:0] num0,num1,num2,num3;
     assign dp = 1;
     quadSevenSeg q7s(seg,an,num0,num1,num2,num3,targetClk);
     
     //uart
-    uart uart(clk,RX,TX,num0,send,sw);
+    uart uart(clk,RsRx,RsTx,num0,btnC,sw);
     
 endmodule
