@@ -23,24 +23,23 @@ module uart(
     input clk,
     input RsRx,
     output RsTx,
-    output [7:0]data_out
+    output [7:0]data_in,
+    input send,
+    input [7:0] sw
     );
     
-    reg en, last_rec;
-    reg [7:0] data_in;
-    wire [7:0] data_out;
+    reg en;
+    reg [7:0] data_out;
+    wire [7:0] data_in;
     wire sent, received, baud;
     baudrate_gen baudrate_gen(clk, baud);
-    uart_rx receiver(baud, RsRx, received, data_out);
-    uart_tx transmitter(baud, data_in, en, sent, RsTx);
+    uart_rx receiver(baud, RsRx, received, data_in);
+    uart_tx transmitter(baud, data_out, en, sent, RsTx);
     
     always @(posedge baud) begin
         if (en) en = 0;
-        if (~last_rec & received) begin
-            data_in = data_out;
-            en = 1;
-        end
-        last_rec = received;
+        data_out = sw;
+        if(send) en = 1;
     end
     
 endmodule
