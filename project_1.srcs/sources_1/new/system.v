@@ -47,10 +47,12 @@ module system(
     
     // display
     wire [3:0] num0, num1, num2, num3;
+    wire an0, an1, an2, an3;
     assign {num1, num0} = sw;
     assign {num3, num2} = ascii;
+    assign an = {an3, an2, an1, an0};
     assign dp = 1;
-    quadSevenSeg q7s(seg,an,num0,num1,num2,num3,targetClk);
+    quadSevenSeg q7s(seg,dp,an0,an1,an2,an3,num0,num1,num2,num3,targetClk);
 
     // signals
     wire [9:0] w_x;
