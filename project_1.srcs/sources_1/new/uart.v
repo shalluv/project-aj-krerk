@@ -24,6 +24,7 @@ module uart(
     input RsRx,
     output RsTx,
     output [7:0]data_in,
+    output received,
     input btnC,
     input [7:0] sw
     );
@@ -32,7 +33,7 @@ module uart(
     wire [7:0] data_out;
     assign data_out = sw;
     wire [7:0] data_in;
-    wire sent, received, baud;
+    wire sent, baud;
     baudrate_gen baudrate_gen(clk, baud);
     uart_rx receiver(baud, RsRx, received, data_in);
     uart_tx transmitter(baud, data_out, en, sent, RsTx);
