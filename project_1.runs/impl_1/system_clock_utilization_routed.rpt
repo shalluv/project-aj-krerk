@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon Dec  9 10:19:47 2024
+| Date         : Mon Dec  9 11:37:39 2024
 | Host         : Noel running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file system_clock_utilization_routed.rpt
 | Design       : system
@@ -72,25 +72,25 @@ Table of Contents
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+-------------------------------+-------------------------------+
 | Local Id | Driver Type/Pin | Constraint | Site/BEL         | Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock | Driver Pin                    | Net                           |
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+-------------------------------+-------------------------------||
-| 0        | FDRE/Q          | None       | SLICE_X14Y24/AFF | X0Y0         |           2 |               1 |              |       | fdivTarget/clkDiv_reg/Q       | fdivTarget/CLK                - Static -
-| 1        | FDRE/Q          | None       | SLICE_X11Y24/AFF | X0Y0         |           1 |               1 |              |       | genblk1[0].fDiv/clkDiv_reg/Q  | genblk1[0].fDiv/clkDiv_reg_0  - Static -
-| 2        | FDRE/Q          | None       | SLICE_X8Y22/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[10].fDiv/clkDiv_reg/Q | genblk1[10].fDiv/clkDiv_reg_0 - Static -
-| 3        | FDRE/Q          | None       | SLICE_X10Y22/AFF | X0Y0         |           1 |               1 |              |       | genblk1[11].fDiv/clkDiv_reg/Q | genblk1[11].fDiv/clkDiv_reg_0 - Static -
-| 4        | FDRE/Q          | None       | SLICE_X11Y22/AFF | X0Y0         |           1 |               1 |              |       | genblk1[12].fDiv/clkDiv_reg/Q | genblk1[12].fDiv/clkDiv_reg_0 - Static -
-| 5        | FDRE/Q          | None       | SLICE_X12Y22/AFF | X0Y0         |           1 |               1 |              |       | genblk1[13].fDiv/clkDiv_reg/Q | genblk1[13].fDiv/clkDiv_reg_0 - Static -
-| 6        | FDRE/Q          | None       | SLICE_X13Y23/AFF | X0Y0         |           1 |               1 |              |       | genblk1[14].fDiv/clkDiv_reg/Q | genblk1[14].fDiv/clkDiv_reg_0 - Static -
-| 7        | FDRE/Q          | None       | SLICE_X12Y23/AFF | X0Y0         |           1 |               1 |              |       | genblk1[15].fDiv/clkDiv_reg/Q | genblk1[15].fDiv/clkDiv_reg_0 - Static -
-| 8        | FDRE/Q          | None       | SLICE_X12Y24/AFF | X0Y0         |           1 |               1 |              |       | genblk1[16].fDiv/clkDiv_reg/Q | genblk1[16].fDiv/clkDiv_reg_0 - Static -
-| 9        | FDRE/Q          | None       | SLICE_X13Y24/AFF | X0Y0         |           1 |               1 |              |       | genblk1[17].fDiv/clkDiv_reg/Q | genblk1[17].fDiv/clkDiv       - Static -
-| 10       | FDRE/Q          | None       | SLICE_X9Y24/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[1].fDiv/clkDiv_reg/Q  | genblk1[1].fDiv/clkDiv_reg_0  - Static -
-| 11       | FDRE/Q          | None       | SLICE_X8Y24/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[2].fDiv/clkDiv_reg/Q  | genblk1[2].fDiv/clkDiv_reg_0  - Static -
-| 12       | FDRE/Q          | None       | SLICE_X8Y25/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[3].fDiv/clkDiv_reg/Q  | genblk1[3].fDiv/clkDiv_reg_0  - Static -
-| 13       | FDRE/Q          | None       | SLICE_X9Y25/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[4].fDiv/clkDiv_reg/Q  | genblk1[4].fDiv/clkDiv_reg_0  - Static -
-| 14       | FDRE/Q          | None       | SLICE_X10Y25/AFF | X0Y0         |           1 |               1 |              |       | genblk1[5].fDiv/clkDiv_reg/Q  | genblk1[5].fDiv/clkDiv_reg_0  - Static -
-| 15       | FDRE/Q          | None       | SLICE_X10Y24/AFF | X0Y0         |           1 |               1 |              |       | genblk1[6].fDiv/clkDiv_reg/Q  | genblk1[6].fDiv/clkDiv_reg_0  - Static -
-| 16       | FDRE/Q          | None       | SLICE_X10Y23/AFF | X0Y0         |           1 |               1 |              |       | genblk1[7].fDiv/clkDiv_reg/Q  | genblk1[7].fDiv/clkDiv_reg_0  - Static -
-| 17       | FDRE/Q          | None       | SLICE_X9Y23/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[8].fDiv/clkDiv_reg/Q  | genblk1[8].fDiv/clkDiv_reg_0  - Static -
-| 18       | FDRE/Q          | None       | SLICE_X8Y23/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[9].fDiv/clkDiv_reg/Q  | genblk1[9].fDiv/clkDiv_reg_0  - Static -
+| 0        | FDRE/Q          | None       | SLICE_X15Y25/AFF | X0Y0         |           2 |               1 |              |       | fdivTarget/clkDiv_reg/Q       | fdivTarget/CLK                - Static -
+| 1        | FDRE/Q          | None       | SLICE_X8Y29/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[0].fDiv/clkDiv_reg/Q  | genblk1[0].fDiv/clkDiv_reg_0  - Static -
+| 2        | FDRE/Q          | None       | SLICE_X10Y28/AFF | X0Y0         |           1 |               1 |              |       | genblk1[10].fDiv/clkDiv_reg/Q | genblk1[10].fDiv/clkDiv_reg_0 - Static -
+| 3        | FDRE/Q          | None       | SLICE_X11Y28/AFF | X0Y0         |           1 |               1 |              |       | genblk1[11].fDiv/clkDiv_reg/Q | genblk1[11].fDiv/clkDiv_reg_0 - Static -
+| 4        | FDRE/Q          | None       | SLICE_X12Y28/AFF | X0Y0         |           1 |               1 |              |       | genblk1[12].fDiv/clkDiv_reg/Q | genblk1[12].fDiv/clkDiv_reg_0 - Static -
+| 5        | FDRE/Q          | None       | SLICE_X12Y27/AFF | X0Y0         |           1 |               1 |              |       | genblk1[13].fDiv/clkDiv_reg/Q | genblk1[13].fDiv/clkDiv_reg_0 - Static -
+| 6        | FDRE/Q          | None       | SLICE_X13Y27/AFF | X0Y0         |           1 |               1 |              |       | genblk1[14].fDiv/clkDiv_reg/Q | genblk1[14].fDiv/clkDiv_reg_0 - Static -
+| 7        | FDRE/Q          | None       | SLICE_X13Y26/AFF | X0Y0         |           1 |               1 |              |       | genblk1[15].fDiv/clkDiv_reg/Q | genblk1[15].fDiv/clkDiv_reg_0 - Static -
+| 8        | FDRE/Q          | None       | SLICE_X14Y26/AFF | X0Y0         |           1 |               1 |              |       | genblk1[16].fDiv/clkDiv_reg/Q | genblk1[16].fDiv/clkDiv_reg_0 - Static -
+| 9        | FDRE/Q          | None       | SLICE_X14Y25/AFF | X0Y0         |           1 |               1 |              |       | genblk1[17].fDiv/clkDiv_reg/Q | genblk1[17].fDiv/clkDiv       - Static -
+| 10       | FDRE/Q          | None       | SLICE_X8Y30/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[1].fDiv/clkDiv_reg/Q  | genblk1[1].fDiv/clkDiv_reg_0  - Static -
+| 11       | FDRE/Q          | None       | SLICE_X8Y32/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[2].fDiv/clkDiv_reg/Q  | genblk1[2].fDiv/clkDiv_reg_0  - Static -
+| 12       | FDRE/Q          | None       | SLICE_X8Y33/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[3].fDiv/clkDiv_reg/Q  | genblk1[3].fDiv/clkDiv_reg_0  - Static -
+| 13       | FDRE/Q          | None       | SLICE_X9Y33/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[4].fDiv/clkDiv_reg/Q  | genblk1[4].fDiv/clkDiv_reg_0  - Static -
+| 14       | FDRE/Q          | None       | SLICE_X10Y32/AFF | X0Y0         |           1 |               1 |              |       | genblk1[5].fDiv/clkDiv_reg/Q  | genblk1[5].fDiv/clkDiv_reg_0  - Static -
+| 15       | FDRE/Q          | None       | SLICE_X10Y31/AFF | X0Y0         |           1 |               1 |              |       | genblk1[6].fDiv/clkDiv_reg/Q  | genblk1[6].fDiv/clkDiv_reg_0  - Static -
+| 16       | FDRE/Q          | None       | SLICE_X9Y31/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[7].fDiv/clkDiv_reg/Q  | genblk1[7].fDiv/clkDiv_reg_0  - Static -
+| 17       | FDRE/Q          | None       | SLICE_X9Y30/AFF  | X0Y0         |           1 |               1 |              |       | genblk1[8].fDiv/clkDiv_reg/Q  | genblk1[8].fDiv/clkDiv_reg_0  - Static -
+| 18       | FDRE/Q          | None       | SLICE_X10Y30/AFF | X0Y0         |           1 |               1 |              |       | genblk1[9].fDiv/clkDiv_reg/Q  | genblk1[9].fDiv/clkDiv_reg_0  - Static -
 +----------+-----------------+------------+------------------+--------------+-------------+-----------------+--------------+-------+-------------------------------+-------------------------------||
 * Local Clocks in this context represents only clocks driven by non-global buffers
 ** Clock Loads column represents the clock pin loads (pin count)
@@ -105,7 +105,7 @@ Table of Contents
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
 | Clock Region Name | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail | Used | Avail |
 +-------------------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+------+-------+
-| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  176 |  1200 |   89 |   400 |    0 |    20 |    2 |    10 |    0 |    20 |
+| X0Y0              |    2 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |  176 |  1200 |   64 |   400 |    0 |    20 |    2 |    10 |    0 |    20 |
 | X1Y0              |    1 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |   33 |  1500 |    0 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1200 |    0 |   400 |    0 |    20 |    0 |    10 |    0 |    20 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  1500 |    0 |   450 |    0 |    40 |    0 |    20 |    0 |    20 |

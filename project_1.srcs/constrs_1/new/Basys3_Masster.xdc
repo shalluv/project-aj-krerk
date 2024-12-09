@@ -151,11 +151,11 @@ set_property PACKAGE_PIN T18 [get_ports btnU]
 
 ##Pmod Header JB
 ##Sch name = JB1
-set_property PACKAGE_PIN A14 [get_ports {JB[0]}]
-	set_property IOSTANDARD LVCMOS33 [get_ports {JB[0]}]
+set_property PACKAGE_PIN A14 [get_ports {JB0}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {JB0}]
 ###Sch name = JB2
-set_property PACKAGE_PIN A16 [get_ports {JB[1]}]
-	set_property IOSTANDARD LVCMOS33 [get_ports {JB[1]}]
+set_property PACKAGE_PIN A16 [get_ports {JB1}]
+	set_property IOSTANDARD LVCMOS33 [get_ports {JB1}]
 ###Sch name = JB3
 #set_property PACKAGE_PIN B15 [get_ports {JB[2]}]
 #	set_property IOSTANDARD LVCMOS33 [get_ports {JB[2]}]

@@ -21,7 +21,8 @@
 
 
 module system(
-    inout wire [1:0] JB,
+    input wire JB0,
+    output wire JB1,
     output [6:0] seg,
     output dp,
     output [3:0] an,
@@ -32,8 +33,6 @@ module system(
     input btnC,
     input btnU
     );
-    assign RsTx = JB[0];
-    assign RsRx = JB[1];
     
     // Clock
     wire targetClk;
@@ -72,7 +71,7 @@ module system(
                         .ascii(ascii), .x(w_x), .y(w_y), .rgb(rgb_next));
     
     //uart
-    uart uart(clk,RsRx,RsTx,ascii,char_received,btnC,sw);
+    uart uart(clk,JB0,JB1,ascii,char_received,btnC,sw);
     
     // rgb buffer
     always @(posedge clk)
